@@ -58,7 +58,7 @@ yarn add @avioui/tools
 1. Add the CDN script of `@avioui/tools` in to your HTML file.
 
 ```html
-<script crossorigin src="https://unpkg.com/material-ripple-effects/ripple.js"></script>
+<script crossorigin src="https://unpkg.com/@avioui/tools/ripple/html"></script>
 ```
 
 2. cdn works using the data attribute on the element, set the data-ripple on the element you want to have ripple effect.

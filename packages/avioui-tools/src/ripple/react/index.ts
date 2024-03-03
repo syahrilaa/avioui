@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-export type RippleAnimation = any
 
 interface RippleRGBAColor {
     r: number
