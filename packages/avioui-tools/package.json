@@ -1,16 +1,17 @@
 {
   "name": "@avioui/tools",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "@avioui/tools is third party for help your projects",
   "main": "index.js",
   "repository": "https://github.com/syahrilaa/avioui",
   "author": "Syahril Akbar Atthoriq (syahrilakbaraa@gmail.com)",
   "license": "ISC",
+  "private": false,
   "scripts": {
     "build": "yarn build:dts && yarn build:cjs && yarn copy",
     "build:dts": "tsc --declaration --declarationMap --emitDeclarationOnly",
     "build:cjs": "babel ./src/ -d dist --extensions \".ts\" --ignore \"**/*.test.ts\"",
-    "copy": "cp ./package.json ./dist"
+    "copy": "cp ./package.json ./dist && cp ./README.md ./dist && cp ./LICENSE ./dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
@@ -35,5 +36,16 @@
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"
-  }
+  },
+  "keywords": [
+    "AvioUI",
+    "create-react-app",
+    "react",
+    "next",
+    "typescript",
+    "javascript",
+    "react library",
+    "react tools",
+    "html tools"
+  ]
 }

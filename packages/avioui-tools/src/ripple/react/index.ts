@@ -1,3 +1,5 @@
+'use client'
+import React from 'react'
 export type RippleAnimation = any
 
 interface RippleRGBAColor {
@@ -12,10 +14,10 @@ interface RippleStyledProps {
     color: string
     rect: DOMRect
     radius: number
-    ev: MouseEvent
+    ev: React.MouseEvent<HTMLElement, MouseEvent>
 }
 
-class Ripple {
+class Ripple<T extends React.MouseEvent<HTMLElement, MouseEvent>> {
     private x: number = 0
     private y: number = 0
     private z: number = 0
@@ -81,7 +83,7 @@ class Ripple {
         elementCircle.style.height = radius * 2 + 'px'
     }
 
-    add(ev: MouseEvent): void {
+    add(ev: T): void {
         const rippleTargetElement = ev.currentTarget as HTMLElement
         rippleTargetElement.style.position = 'relative'
         rippleTargetElement.style.overflow = 'hidden'
