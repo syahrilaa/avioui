@@ -1,6 +1,6 @@
 {
-  "name": "@avioui/tools",
-  "version": "1.0.0",
+  "name": "@avioui/ripple-effect",
+  "version": "0.1.0",
   "description": "@avioui/tools is third party for help your projects",
   "main": "index.js",
   "repository": "https://github.com/syahrilaa/avioui",

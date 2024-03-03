@@ -4,11 +4,9 @@
   </a>
 </p>
 
-<h1 align="center">Avioui - Tools</h1>
+<h1 align="center">Avioui - Tools ripple</h1>
 
-## Available Tools:
-
-### - Ripple Effect
+## - Ripple Effect
 
 Made for those of you who want to make your elements have a Ripple effect
 
@@ -17,25 +15,25 @@ Made for those of you who want to make your elements have a Ripple effect
 
 #### Uses Instructions:
 
-1. Install the `@avioui/tools` from terminal by npm or yarn.
+1. Install the `@avioui/tools-ripple` from terminal by npm or yarn.
 
 ```bash
-npm i @avioui/tools
+npm i @avioui/tools-ripple
 
-yarn add @avioui/tools
+yarn add @avioui/tools-ripple
 ```
 
-2. Import the `@avioui/tools` in to your project.
+2. Import the `@avioui/tools-ripple` in to your project.
 
 ```ts
-    import Ripple from '@avioui/tools'
+    import Ripple from '@avioui/tools-ripple'
 ```
 
-3. `@avioui/tools` Ripple effect works by using events on elements. You need to initialize the Ripple() object first then use the add() method to get the ripple effect on the component.
+3. `@avioui/tools-ripple` Ripple effect works by using events on elements. You need to initialize the Ripple() object first then use the add() method to get the ripple effect on the component.
 
 ```tsx
     import React from 'react'
-    import Ripple from '@avioui/tools'
+    import Ripple from '@avioui/tools-ripple'
 
     function Example() {
 
