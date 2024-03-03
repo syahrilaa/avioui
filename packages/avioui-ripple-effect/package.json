@@ -1,10 +1,11 @@
 {
   "name": "@avioui/ripple-effect",
   "version": "0.1.0",
-  "description": "@avioui/tools is third party for help your projects",
+  "description": "@avioui/ripple-effect is third party for help your projects",
   "main": "index.js",
   "repository": "https://github.com/syahrilaa/avioui",
   "author": "Syahril Akbar Atthoriq (syahrilakbaraa@gmail.com)",
+  "homepage": "https://github.com/syahrilaa/avioui/tree/main/packages/avioui-ripple-effect",
   "license": "ISC",
   "private": false,
   "scripts": {
@@ -37,6 +38,9 @@
     "javascript",
     "react library",
     "react tools",
-    "html tools"
+    "html tools",
+    "ripple react",
+    "ripple",
+    "ripple effects"
   ]
 }
