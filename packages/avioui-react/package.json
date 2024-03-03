@@ -1,0 +1,62 @@
+{
+  "name": "@avioui/react",
+  "version": "0.1.0",
+  "description": "@avioui/react is react library components.",
+  "repository": "https://github.com/syahrilaa/avioui",
+  "author": "Syahril Akbar Atthoriq (syahrilakbaraa@gmail.com)",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "build": "yarn build:dts && yarn build:cjs && yarn copy",
+    "build:dts": "tsc --declaration --declarationMap --emitDeclarationOnly",
+    "build:cjs": "babel ./src/ -d dist --extensions \".tsx,.ts\" --ignore \"**/*.test.tsx\",\"**/*.test.ts\"",
+    "copy": "cp ./package.json ./dist",
+    "lint": "eslint . --ext js,jsx,ts,tsx --max-warnings=0 --config .eslintrc --no-eslintrc",
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-runtime": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-modules": "^0.1.6",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@babel/runtime": "^7.24.0",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.8"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17",
+    "styled-components": ">=5"
+  },
+  "keywords": [
+    "AvioUI",
+    "create-react-app",
+    "react",
+    "next",
+    "typescript",
+    "javascript",
+    "react library"
+  ]
+}
